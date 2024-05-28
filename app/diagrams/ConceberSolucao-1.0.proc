@@ -61,6 +61,11 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_NZaNGxz8Ee-f0oRFnpeo4A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_UWPJYB0JEe-cz9NozspsPQ" name="solucao" dataType="_xLJPdBz1Ee-f0oRFnpeo4A" className="com.company.model.Solucao">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_WHo1kB0JEe-cz9NozspsPQ" name="initSolucao()" content="def solucaoVar = new com.company.model.Solucao()&#xD;&#xA;solucaoVar.equipa = solucaoInput?.equipa&#xD;&#xA;return solucaoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Solucao">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_WHo1kR0JEe-cz9NozspsPQ" name="solucaoInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_xLJPVBz1Ee-f0oRFnpeo4A">
         <targetForm xmi:type="expression:Expression" xmi:id="_4XSMMhz9Ee-f0oRFnpeo4A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -85,7 +90,11 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_ayhjQBz8Ee-f0oRFnpeo4A" name="Gestor OV" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_iVaF4Bz8Ee-f0oRFnpeo4A" name="Equipa Técnica"/>
-      <contract xmi:type="process:Contract" xmi:id="_xLJPXBz1Ee-f0oRFnpeo4A"/>
+      <contract xmi:type="process:Contract" xmi:id="_xLJPXBz1Ee-f0oRFnpeo4A">
+        <inputs xmi:type="process:ContractInput" xmi:id="_WHoOgB0JEe-cz9NozspsPQ" name="solucaoInput" type="COMPLEX" dataReference="solucao">
+          <inputs xmi:type="process:ContractInput" xmi:id="_WHoOgR0JEe-cz9NozspsPQ" name="equipa"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_xLJPXRz1Ee-f0oRFnpeo4A">
         <name xmi:type="expression:Expression" xmi:id="_xLJPXhz1Ee-f0oRFnpeo4A" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_xLJPXxz1Ee-f0oRFnpeo4A" content="" returnTypeFixed="true"/>
