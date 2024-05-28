@@ -56,7 +56,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_G86gNhz7Ee-cz9NozspsPQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_G86gOBz7Ee-cz9NozspsPQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_G86gNxz7Ee-cz9NozspsPQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <calledActivityName xmi:type="expression:Expression" xmi:id="_SbKFJBz7Ee-cz9NozspsPQ" name="aFazer Cotações" content="aFazer Cotações" returnTypeFixed="true"/>
+          <calledActivityName xmi:type="expression:Expression" xmi:id="_SbKFJBz7Ee-cz9NozspsPQ" name="Fazer Cotações" content="Fazer Cotações" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_SbKFJRz7Ee-cz9NozspsPQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
