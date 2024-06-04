@@ -16,6 +16,7 @@
       <firstName>Andr&#xe9;</firstName>
       <lastName>Costa</lastName>
       <title>Mr</title>
+      <manager></manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">123</password>

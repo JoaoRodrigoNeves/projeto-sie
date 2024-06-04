@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "7ddeedf5-1b07-4d91-9763-b1a81f3b8df3",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1717512042208,
+  "lastUpdate" : 1717518755960,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -108,27 +108,27 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
-                        "labelWidth" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -136,30 +136,37 @@
                           "type" : "interpolation",
                           "value" : "Equipa"
                         },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "interpolation"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "getOrganizationGroups"
                         },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                        "displayedKey" : {
+                          "type" : "expression",
+                          "value" : "\"displayName\""
+                        },
+                        "returnedKey" : {
+                          "type" : "expression",
+                          "value" : "\"id\""
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.solucaoInput.equipa"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "8de867fc-fdf5-4e4c-b698-c8b5d29fd643",
+                      "reference" : "cc68561d-fee7-4509-b39e-5cb97efb4498",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ]
                 ]
@@ -238,6 +245,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "62b01596-eddc-40e8-bef2-fa4bae994e7b",
@@ -336,6 +364,13 @@
         "return {",
         "\tsolucaoInput: $data.formInput.solucaoInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "getOrganizationGroups" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=100"
       ],
       "exposed" : false
     }
