@@ -31,7 +31,7 @@
       <password encrypted="false">123</password>
       <customUserInfoValues/>
     </user>
-    <user userName="User1">
+    <user userName="franciscocastro">
       <firstName>Francisco</firstName>
       <lastName>Castro</lastName>
       <title>Mr</title>
@@ -73,7 +73,7 @@
       <groupName>EquipaTecnica</groupName>
     </membership>
     <membership>
-      <userName>User1</userName>
+      <userName>franciscocastro</userName>
       <roleName>member</roleName>
       <groupName>comercial</groupName>
     </membership>
